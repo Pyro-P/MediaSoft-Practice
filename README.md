@@ -189,4 +189,5 @@ svg use {
 ## :envelope: Контакты
 По всем вопросам пишите в [Telegram](https://t.me/andreyalexeich)
 #   M e d i a S o f t - P r a c t i c e  
+ #   M e d i a S o f t - P r a c t i c e  
  
