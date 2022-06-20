@@ -1,0 +1,45 @@
+.blog-header{
+    margin-top: 128px;
+    margin-bottom: 56px;
+    min-height: 250px;
+    background-image: url("../img/page-header-bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-header__title{
+    font-size: 2.75rem;
+    line-height: 74px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.blog-header__subtitle{
+    font-family: "Gilroy Regular", sans-serif;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    opacity: .4;
+}
+.search-form{
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    padding: 16px 24px;
+    height: 56px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.search-form__icon{
+    margin-right: 24px;
+}
+.search-form__input{
+    background: transparent;
+    border: none;
+    outline: none;
+}

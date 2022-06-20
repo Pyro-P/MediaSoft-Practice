@@ -12,3 +12,94 @@
 
 // БЭМ-блоки
 @import "../blocks/modules/modules";
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: "Gilroy Semibold", serif;
+    font-size: 2.75rem;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+h2{
+    font-family: "Gilroy Semibold", sans-serif;
+    font-size: 2.25rem;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $blue-2;
+}
+h3{
+    font-family: "Gilroy Semibold", sans-serif;
+    color: #fff;
+    font-size: 1.75rem;
+    line-height: 38px;
+    letter-spacing: 0.04em;
+}
+h4{
+    font-family: "Gilroy Semibold", sans-serif;
+    color: $blue-3;
+    font-size: 1.25rem;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+p, li, label{
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+label{
+    line-height: 30px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="text"], textarea{
+    font-family: "Gilroy Light", sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    border: none;
+    outline: none;
+    resize: none;
+}
+textarea{
+    line-height: 20px;
+}
+.button{
+    background: $blue-4;
+    color: #fff;
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1rem;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+.button:hover{
+    background: $blue-3;
+    transition: background .2s ease-in-out;
+}
+.button:active{
+    transform: translate(0, 1px);
+}
+@media (max-width: 640px) {
+    html{
+        font-size: 14px;
+    }
+}

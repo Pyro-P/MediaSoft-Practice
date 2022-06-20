@@ -1,0 +1,59 @@
+.blog-all-article{
+    position: relative;
+    max-width: 940px + (20 * 2);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.blog-all-article__title{
+    margin-bottom: 32px;
+}
+.article{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    max-width: 860px;
+    min-height: 200px;
+    .article__img{
+        margin-right: 20px;
+    }
+}
+.article:not(:last-child){
+    margin-bottom: 32px;
+}
+.article__title{
+    margin-bottom: 16px;
+}
+.article__text{
+    margin-bottom: 14px;
+}
+.blog-all-article__control{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    img{
+        height: 18px;
+    }
+    p{
+        margin: 0 16px;
+        font-family: "Gilroy Semibold", sans-serif;
+        color: $blue-3;
+    }
+}
+.blog-all-article__prev-page, .blog-all-article__next-page{
+    display: flex;
+    align-items: center;
+}
+.blog-all-article__prev-page{
+    img{
+        transform: rotate(180deg);
+    }
+}
+.blog-all-article__next-page{
+    right: 0;
+}
+
+@media (max-width: 560px) {
+    .article{
+        flex-direction: column;
+    }
+}

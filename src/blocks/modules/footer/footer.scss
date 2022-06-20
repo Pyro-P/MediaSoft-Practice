@@ -1,0 +1,124 @@
+.footer{
+    position: relative;
+    margin-top: 96px;
+}
+.footer *{
+    z-index: 2;
+}
+.footer > *{
+    position: relative;
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    border-top-right-radius: 200px;
+    width: 95%;
+    height: 100%;
+    background-color: $blue-2;
+    z-index: 1;
+}
+.footer__title-wrap{
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-right: 80px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer__title{
+    margin-bottom: 32px;
+    color: #fff;
+}
+.footer__text{
+    color: #fff;
+    opacity: .6;
+}
+.footer__button{
+    width: 220px;
+    margin-left: auto;
+}
+.footer__line{
+    margin: 96px auto;
+    opacity: .4;
+    max-width: calc(940px * 2);
+    padding-right: 80px;
+    transform: translate(-25%, 0);
+}
+.contacts{
+    margin: 0 auto;
+    max-width: 940px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-wrap{
+    display: flex;
+    align-items: center;
+}
+.logo-wrap__company-name{
+    margin-left: 16px;
+}
+.nav__title, .socials__title{
+    margin-bottom: 32px;
+    color: #fff;
+}
+.item{
+    list-style: none;
+    color: #fff;
+}
+.item:not(:last-child){
+    margin-bottom: 16px;
+}
+.info__items{
+    margin-top: 32px;
+    margin-left: 32px;
+    & > li:not(:last-child){
+        margin-bottom: 24px;
+    }
+    & > li::before{
+        font-family: "Gilroy Semibold", sans-serif;
+        position: absolute;
+        left: -32px;
+    }
+}
+.info__text::before{
+    content: "A.";
+}
+.info__telephone::before{
+    content: "T.";
+}
+.info__email::before{
+    content: "E.";
+}
+.footer__copyright{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 64px 0;
+    color: #fff;
+    opacity: .4;
+}
+
+@media (max-width: 640px) {
+    .footer__title-wrap{
+        flex-direction: column;
+    }
+    .footer__button{
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 48px;
+    }
+    .footer__line{
+        max-width: 100%;
+        transform: none;
+    }
+    .logo-wrap{
+        justify-content: center;
+    }
+    .footer__copyright{
+        text-align: center;
+    }
+    .footer__button{
+        margin-left: auto;
+    }
+}

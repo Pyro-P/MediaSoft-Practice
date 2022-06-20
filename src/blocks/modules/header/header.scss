@@ -1,0 +1,97 @@
+.header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1366px;
+    padding: 40px 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding .15s ease-in-out;
+    &_scrolled{
+        padding: 12px 83px;
+        transition: padding .15s ease;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 200vw;
+        transform: translate(-50%, 0);
+        height: 100%;
+        background-color: transparent;
+        box-shadow: 0 6px 24px rgba(16, 112, 177, 0);
+        transition: all .1s ease-in-out;
+    }
+    &_scrolled::before{
+        background-color: #fff;
+        box-shadow: 0 6px 24px rgba(16, 112, 177, 0.08);
+        transition: all .25s ease;
+    }
+}
+.header__logo{
+    height: 48px;
+}
+.header__burger-menu{
+    height: 32px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 100;
+    background: $blue-4;
+    min-width: 400px;
+    border-top-left-radius: 50px;
+    transform: translate(100%, 0);
+    transition: transform .3s ease-in-out;
+}
+.menu_active{
+    transform: translate(0, 0);
+    transition: transform .3s ease-in-out;
+}
+.menu__close{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 28px;
+    right: 18px;
+    cursor: pointer;
+}
+.menu__items{
+    margin: 100px 50px;
+}
+.menu__item{
+    list-style: none;
+    color: #fff;
+    font-family: "Gilroy Semibold";
+    font-size: 1.25rem;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    height: 26px + 16px;
+    overflow: hidden;
+}
+
+@media (max-width: 1366px) {
+    .header{
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .menu{
+        width: 100%;
+    }
+    .menu__item{
+        font-size: 1.5rem;
+    }
+}
