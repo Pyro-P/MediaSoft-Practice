@@ -1,4 +1,7 @@
 # MediaSoft-Practice
+
+Проверить работу можно тут - https://pyro-p.github.io/MediaSoft-Practice/dist/
+
 ## Запуск
 * установите `NodeJS`
 * установите глобально:
